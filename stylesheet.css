@@ -271,14 +271,15 @@ button:active {
 
 #video-documentation {
     background-color: var(--color2);
-    padding: 3em;
+    padding: 3em 1em;
 }
 
 .video-doc-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around   ;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .video-doc-wrapper video {
@@ -288,6 +289,7 @@ button:active {
 }
 
 .video-doc-wrapper p {
+    max-width: 800px;
     padding: 2em;
     font-weight: 600;
     line-height: 2.8;
@@ -365,7 +367,13 @@ button:active {
     background-color: var(--color3);
     color: var(--color1);
     /* text-align: center; */
-    padding: 3em 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form {
+    padding: 3em 0px 3em 150px;
 }
 
 .form h3 {
@@ -416,6 +424,14 @@ button:active {
     color: var(--color1);
     background-color: var(--color2);
     border: 3px solid var(--color2);
+}
+
+.bottom-image {
+    background-image: url('img/diving.jpg');
+    width: 50%;
+    height: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
