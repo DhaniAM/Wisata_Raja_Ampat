@@ -432,6 +432,7 @@ button:active {
     height: inherit;
     background-repeat: no-repeat;
     background-size: cover;
+    color: rgba(39, 24, 126, 0);
 }
 
 
