@@ -34,24 +34,21 @@ header {
 
 .main-title {
     margin-left: 2em;
-    margin-right: 2em;
     font-size: 4em;
     color: var(--color4);
     text-shadow: 0px 2px 1px var(--color1);
-}
-
-header audio {
+    text-align: center;
 }
 
 .nav-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     list-style-type: none;
 }
 
 .nav-list li {
-    padding: 1em;
-    margin-right: 2em;
+    padding: 1em 2em 1em 1em;
     font-size: 2em;
     color: var(--color4);
     text-shadow: 0px 1px 0.5px var(--color1);
@@ -82,7 +79,6 @@ header audio {
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
-    margin: 0px;
     display: flex;
     flex-direction: column;
 }
@@ -110,6 +106,10 @@ header audio {
     text-shadow: 2px 2px 3px grey;
     box-shadow: 0px 0px 150px #82DBD8;
     font-style: italic;
+}
+
+#main-content audio {
+    margin: 50px 0 0 180px;
 }
 
 
@@ -456,9 +456,30 @@ footer p {
 }
 
 
+
 /* Responsive */
 
 @media only screen and (max-width: 1200px){
+    body {
+        font-size: 0.8rem;
+    }
+    /* Header */
+    .main-title {  
+     margin-right: 0em;
+     margin-left: 0.5em;
+    }
+
+    .nav-list li {
+        margin-right: 1em;
+        padding: 0.5em;
+    }
+
+    /* main content */
+    #main-content h1 {
+
+    }
+
+    /* Batas wilayah */
     #batas-wilayah {
         background-image: url(img/map-background-small.jpg);
         padding: 1em 1em 3em;
@@ -466,17 +487,52 @@ footer p {
 }
 
 @media only screen and (max-width: 600px){
-    #batas-wilayah {
-        padding: 1em 1em 3em;
+    body {
+        font-size: 0.5rem;
+    }
+    /* Header */
+
+    .nav-list li {
+        margin: 0;
     }
 
-    #batas-wilayah h2{
-        font-size: 2em;
+    /* main content */
+    #main-content {
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-content p {
+        padding: 1.3em;
+        margin: 0;
+    }
+
+    #main-content audio {
+        margin: 0px;
+    }
+
+
+    /* Batas Wilayah */
+    #batas-wilayah {
+        padding: 1em 1em 3em;
     }
 
     .wilayah-table, tr, td {
         border: 5px solid var(--color4);
         border-collapse: collapse;
         padding: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* main content */
+    #main-content audio {
+        margin: 20px 0 0 10px;
+    }
+
+    /* Batas wilayah */
+    #batas-wilayah {
+        background-image: url(img/map-background-extra-small.jpg);
     }
 }
