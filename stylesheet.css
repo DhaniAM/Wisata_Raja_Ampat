@@ -330,10 +330,12 @@ button:active {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .medsos-wrap a{
     font-size: 1.4em;
+    margin: 1em;
     padding: 1.2em 5em;
     border-radius: 50px;
     background-color: var(--color2);
@@ -368,21 +370,18 @@ button:active {
 #contact-form {
     background-color: var(--color3);
     color: var(--color1);
-    /* text-align: center; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .form {
-    padding: 3em 0px 3em 150px;
-    width: 100vw;
+    padding: 3em 0px 3em 8em;
 }
 
 .form h3 {
     margin-bottom: 1em;
     font-size: 3em;
-    width: 50%;
 }
 
 .form label {
@@ -390,21 +389,22 @@ button:active {
 }
 
 .form input {
-    margin-top: 10px;
+    margin-top: 1.4px;
     padding: 0.5em;
-    width: 400px;
-    border-radius: 30px;
+    width: 25em;
+    border-radius: 2em;
     font-size: 1.3em;
     margin-bottom: 1em;
-    border: 3px solid var(--color1);
+    border: 0.2em solid var(--color1);
 }
 
 .form textarea {
-    border: 3px solid var(--color1);
+    border: 0.2em solid var(--color1);
     margin-top: 10px;
     padding: 0.5em;
     font-size: 1.3em;
-    border-radius: 20px;
+    border-radius: 1em;
+    width: 25em;
 }
 
 #submit-button {
@@ -432,7 +432,8 @@ button:active {
 
 .bottom-image {
     background-image: url('img/diving.jpg');
-    width: 50%;
+    width: 100%;
+    margin-left: 2em;
     height: inherit;
     background-repeat: no-repeat;
     background-size: cover;
@@ -554,6 +555,11 @@ footer p {
     .video-doc-wrapper video {
         width: 380px;
         height: auto;
+    }
+
+    /* Form */
+    .form {
+        padding: 3em 0 3em 1em;
     }
 }
 
