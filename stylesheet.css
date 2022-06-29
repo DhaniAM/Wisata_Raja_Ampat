@@ -193,7 +193,7 @@ header {
     padding: 3em;
 }
 
-/* Destinasi List */
+/* Destinasi List / left content*/
 
 .destinasi-list h2 {
     color: var(--color4);
@@ -210,7 +210,7 @@ header {
     font-size: 2em;
 }
 
-/* Destinasi Content */
+/* Destinasi Img / right content */
 
 .destinasi-content {
     display: flex;
@@ -475,20 +475,28 @@ footer p {
         padding: 0.5em;
     }
 
-    /* main content */
-    #main-content h1 {
-
-    }
-
     /* Batas wilayah */
     #batas-wilayah {
         background-image: url(img/map-background-small.jpg);
         padding: 1em 1em 3em;
     }
+
+    .destinasi-content {
+        margin-top: 2em;
+    }
+
+    /* Form */
+    .form textarea {
+        margin-top: 0;
+    }
 }
 
 /* 900px */
 @media only screen and (max-width: 900px) {
+    body {
+        font-size: 0.65rem;
+    }
+
     /* Destinasi */
     .destinasi-img img {
         width: 400px;
@@ -511,7 +519,7 @@ footer p {
 
     /* Header */
     .nav-list li {
-        margin: 0;
+        margin: 1em 0;
     }
 
     /* main content */
@@ -537,7 +545,7 @@ footer p {
     }
 
     .wilayah-table, tr, td {
-        border: 5px solid var(--color4);
+        border: 2px solid var(--color4);
         border-collapse: collapse;
         padding: 0.5em;
     }
@@ -566,14 +574,35 @@ footer p {
 
 /* 400px */
 @media only screen and (max-width: 400px) {
+    body {
+        font-size: 0.4rem;
+    }
+
+     /* Header */
+     .nav-list li {
+        margin: 0 0.5em;
+        font-size: 2.5em;
+    }
+
     /* main content */
+    #main-content {
+        height: 600px;
+    }
+
     #main-content audio {
         margin: 20px 0 0 10px;
     }
 
+    /* Explanation */
+    #explanation {
+        font-size: 1.2em;
+    }
+    
+
     /* Batas wilayah */
     #batas-wilayah {
         background-image: url(img/map-background-extra-small.jpg);
+        padding: 8em 0;
     }
 
     /* Destinasi */
@@ -590,5 +619,14 @@ footer p {
     .video-doc-wrapper video {
         width: 280px;
         height: auto;
+    }
+
+    .video-doc-wrapper p {
+        font-size: 1.5em;
+    }
+
+    /* Penutup */
+    #penutup {
+        font-size: 1.5em;
     }
 }
