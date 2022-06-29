@@ -164,14 +164,11 @@ header {
     font-size: 3em;
 }
 
-#batas-wilayah p {
-    padding: 1em;
-}
-
 .wilayah-table, tr, td {
     border: 5px solid var(--color4);
     border-collapse: collapse;
-    padding: 2em;
+    padding: 1em;
+    font-size: 1.1em;
 }
 
 .wilayah-table td:nth-child(odd) {
@@ -486,6 +483,14 @@ footer p {
     }
 }
 
+@media only screen and (max-width: 900px) {
+    /* Destinasi */
+    .destinasi-img img {
+        width: 400px;
+        height: 250px;
+    }
+}
+
 @media only screen and (max-width: 600px){
     body {
         font-size: 0.5rem;
@@ -523,6 +528,12 @@ footer p {
         border-collapse: collapse;
         padding: 0.5em;
     }
+
+    /* Destinasi */
+    .destinasi-img img {
+        width: 350px;
+        height: 230px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -534,5 +545,15 @@ footer p {
     /* Batas wilayah */
     #batas-wilayah {
         background-image: url(img/map-background-extra-small.jpg);
+    }
+
+    /* Destinasi */
+    .destinasi-img img {
+        width: 250px;
+        height: 130px;
+    }
+
+    .left-arrow, .right-arrow {
+        margin: 0.5em;
     }
 }
